@@ -1,6 +1,6 @@
 !pip install streamlit  --quiet
 
-%%writefile UAS.py
+%%writefile streamlit.py
 import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -69,4 +69,4 @@ if uploaded_file is not None:
             plt.ylabel("Actual")
             st.pyplot(fig)
 
-!streamlit run UAS.py & npx localtunnel --port 8501
+!streamlit run streamlit.py & npx localtunnel --port 8501
