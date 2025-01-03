@@ -65,5 +65,3 @@ if uploaded_file is not None:
             plt.xlabel("Predicted")
             plt.ylabel("Actual")
             st.pyplot(fig)
-
-!streamlit run streamlit.py & npx localtunnel --port 8501
